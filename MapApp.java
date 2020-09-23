@@ -19,5 +19,11 @@ public class MapApp {
         ingredient.values().forEach(System.out::println);
         System.out.println("-----");
         ingredient.keySet().forEach(System.out::println);
+
+        String firstKey = ingredient.firstKey(); //alfabetische volgorde
+        String lastKey = ingredient.lastKey(); //alfabetische volgorde
+        System.out.println("-----");
+        System.out.println(firstKey);
+        System.out.println(lastKey);
     }
 }
