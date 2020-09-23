@@ -16,5 +16,7 @@ public class MapApp {
         System.out.println(sugarAmount);
         System.out.println("-----");
         ingredient.values().forEach(System.out::println);
+        System.out.println("-----");
+        ingredient.keySet().forEach(System.out::println);
     }
 }
