@@ -6,9 +6,10 @@ public class MapApp {
 
     public static void main(String[] args) {
 
-        Map<String, Integer> ingredient = new HashMap<>();
+        Map<String, Integer> ingredient = new LinkedHashMap<>();
         ingredient.put("Potato", 5);  //(key, value)
         ingredient.put("Tomato", 15);  //(key, value)
+        ingredient.put("Mayonaise", 300);  //(key, value)
         ingredient.put("Sugar", 3000);  //(key, value)
         ingredient.put("Banana", 3);  //(key, value)
 
