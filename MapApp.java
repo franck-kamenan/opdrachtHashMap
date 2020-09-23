@@ -14,5 +14,7 @@ public class MapApp {
 
         Integer sugarAmount = ingredient.get("Sugar");
         System.out.println(sugarAmount);
+        System.out.println("-----");
+        ingredient.values().forEach(System.out::println);
     }
 }
