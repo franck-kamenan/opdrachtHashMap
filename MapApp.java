@@ -6,7 +6,7 @@ public class MapApp {
 
     public static void main(String[] args) {
 
-        Map<String, Integer> ingredient = new LinkedHashMap<>();
+        SortedMap<String, Integer> ingredient = new TreeMap<>();
         ingredient.put("Potato", 5);  //(key, value)
         ingredient.put("Tomato", 15);  //(key, value)
         ingredient.put("Mayonaise", 300);  //(key, value)
