@@ -6,7 +6,7 @@ public class MapApp {
 
     public static void main(String[] args) {
 
-        SortedMap<String, Integer> ingredient = new TreeMap<>();
+        NavigableMap<String, Integer> ingredient = new TreeMap<>();
         ingredient.put("Potato", 5);  //(key, value)
         ingredient.put("Tomato", 15);  //(key, value)
         ingredient.put("Mayonaise", 300);  //(key, value)
@@ -22,8 +22,12 @@ public class MapApp {
 
         String firstKey = ingredient.firstKey(); //alfabetische volgorde
         String lastKey = ingredient.lastKey(); //alfabetische volgorde
+        String floorKey = ingredient.floorKey("Pepper"); //laatste woord voor Pepper
+        String ceilingKey = ingredient.ceilingKey("Pepper"); //eerste woord na Pepper
         System.out.println("-----");
         System.out.println(firstKey);
         System.out.println(lastKey);
+        System.out.println(floorKey);
+        System.out.println(ceilingKey);
     }
 }
