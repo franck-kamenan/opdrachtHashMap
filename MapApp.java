@@ -22,12 +22,16 @@ public class MapApp {
 
         String firstKey = ingredient.firstKey(); //alfabetische volgorde
         String lastKey = ingredient.lastKey(); //alfabetische volgorde
-        String floorKey = ingredient.floorKey("Pepper"); //laatste woord voor Pepper
-        String ceilingKey = ingredient.ceilingKey("Pepper"); //eerste woord na Pepper
+        String floorKey = ingredient.floorKey("Potato"); //laatste woord voor of gelijk aan Potato
+        String ceilingKey = ingredient.ceilingKey("Potato"); //eerste woord na of gelijk aan Potato
+        String lowerKey = ingredient.lowerKey("Potato"); //laatste woord voor Potato
+        String higherKey = ingredient.higherKey("Potato"); //eerste woord na Potato
         System.out.println("-----");
         System.out.println(firstKey);
         System.out.println(lastKey);
         System.out.println(floorKey);
         System.out.println(ceilingKey);
+        System.out.println(lowerKey);
+        System.out.println(higherKey);
     }
 }
